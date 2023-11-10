@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.pri-bg-col{
+    background-color:#5f1782 !important;
+} 
+.bor-col{
+    border-color: #5f1782 !important;
+
+}  
+.pri-text-col{
+    color:#5f1782  !important;
+}
+.sec-bg-col{
+    background-color: whitesmoke !important;
+}
