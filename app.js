@@ -1,14 +1,14 @@
 //create a dummy data representing the question,option and answer
 let quizData =[
     {
-        question: 'what is the name of the vertical lines that runs through the earth',
-        options: [ "equator", "longitude","latitude"],
-        answer: "equator"
+        question: 'what does GUI stand for?',
+        options: [ "Graphical user interface", "github user interface","graphical user ink"],
+        answer: "Graphical user interface"
     },
     {
-        question: 'what is the name of the vertical lines that runs through the earth',
-        options: [ "equator", "longitude","latitude"],
-        answer: "equator"
+        question: 'A blue wavy line in microsoftword indicate which error?',
+        options: [ "contextual error", "gramatical error","spelling error"],
+        answer: "contextual error"
     },
     {
         question: 'what is the name of the vertical lines that runs through the earth',
@@ -30,9 +30,12 @@ let quizArray = quizData.map((quiz)=>{
         </h1>
         <select name="select" id="select-item" class="w-100 py-3">
             <option value="" select-disabled> select an answer</option>
-            <option value=${quiz.options[0]}>${quiz.options[0]}</option>
-            <option value=${quiz.options[1]}>${quiz.options[1]}</option>
-            <option value=${quiz.options[2]}>${quiz.options[2]}</option>
+            ${quiz.options.map((Option) => {
+                return `<option value=${Option}>${Option}</option>`;
+            })}
+            // <option value=${quiz.options[0]}>${quiz.options[0]}</option>
+            // <option value=${quiz.options[1]}>${quiz.options[1]}</option>
+            // <option value=${quiz.options[2]}>${quiz.options[2]}</option>
         </select>
     </div>
     <div class="left col-6 px-5 sec-bg-col ">
